@@ -25,6 +25,10 @@
 	    var result = parseInt($("#text1").val()) + parseInt($("#text2").val());
 	    $("#text3").val(result);
       });
+    
+    $("input[name=radio-1]").click(function(){
+    	alert($('input[name=radio-1]:checked').val());
+    });
 
   });
   </script>
@@ -40,11 +44,11 @@
   <fieldset>
     <legend>Select a Location: </legend>
     <label for="radio-1">New York</label>
-    <input type="radio" name="radio-1" id="radio-1">
+    <input type="radio" name="radio-1" id="radio-1" value="New York">
     <label for="radio-2">Paris</label>
-    <input type="radio" name="radio-1" id="radio-2">
+    <input type="radio" name="radio-1" id="radio-2" value="Paris">
     <label for="radio-3">London</label>
-    <input type="radio" name="radio-1" id="radio-3">
+    <input type="radio" name="radio-1" id="radio-3" value="London">
   </fieldset>
   
    <h2>計算</h2>
