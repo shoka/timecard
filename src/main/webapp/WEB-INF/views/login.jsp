@@ -15,14 +15,14 @@
 	<div id="formsContent">
 		<h2>Forms</h2>
 		<spring:url value="/login" var="formUrl"/>
-		<form:form  modelAttribute="User" action="${formUrl}" method="post" >
+		<form:form  modelAttribute="user" action="${formUrl}" method="post" >
 
 		  	<fieldset>
 		  		<legend>Personal Info</legend>
 
-		  		<form:input path="${userId}" />
+		  		<form:input path="userId" />
 		  		
-		  		<form:input path="${password}" />
+		  		<form:input path="password" />
 	
 	
 		  	</fieldset>
