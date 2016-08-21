@@ -1,4 +1,4 @@
-package me.linknext.timecard;
+package me.linknext.timecard.javabean;
 
 public class User {
 	
