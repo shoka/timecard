@@ -17,7 +17,7 @@ tr.even {background-color: #EEEEDD}
 <body>
 
 <%
-session.setAttribute("name","TOM");
+session.setAttribute("name","KATSU");
 session.setAttribute("count","15");
 session.setAttribute("age","25");
 %>
@@ -29,6 +29,11 @@ session.setAttribute("age","25");
 		</p>
 		<div style="margin-left: 20px"> 		
 			<pre>ó·ÅF<a href="http://struts.wasureppoi.com/jstl/02_set.html">http://struts.wasureppoi.com/jstl/02_set.html</a></pre>
+		
+		<c:set var="data" value="ÇƒxxxxxxxxxÅI" />
+<c:out value="${data}" />
+
+
 		</div>
 		
 		<p>
@@ -36,6 +41,18 @@ session.setAttribute("age","25");
 		</p>
 		<div style="margin-left: 20px"> 		
 			<pre>ó·ÅF<a href="http://struts.wasureppoi.com/jstl/02_if.html">http://struts.wasureppoi.com/jstl/02_if.html</a></pre>
+		
+		<c:if test="${name == 'TOM'}" var="flg" />
+
+<c:if test="${flg}" >
+ÉgÉÄ
+</c:if>
+
+<c:if test="${!flg}" >
+ÉgÉÄÇ≈ÇÕÇ»Ç¢
+</c:if>
+
+
 		</div>
 		
 		<p>
@@ -44,6 +61,12 @@ session.setAttribute("age","25");
 		<div style="margin-left: 20px"> 		
 			<pre>ó·ÅF<a href="http://struts.wasureppoi.com/jstl/02_choose.html">http://struts.wasureppoi.com/jstl/02_choose.html</a></pre>
 
+<c:choose>
+<c:when test="${age >=30 }">ÇRÇOë„à»è„</c:when>
+<c:when test="${age >=20 }">ÇQÇOë„</c:when>
+<c:when test="${age >=10 }">ÇPÇOë„</c:when>
+<c:otherwise>ÇPÇOçŒà»â∫</c:otherwise>
+</c:choose>
 		</div>
 		
 		<p>

@@ -10,14 +10,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import me.linknext.timecard.javabean.ParamBean;
+import me.linknext.timecard.javabean.Person;
+import me.linknext.timecard.service.LoginService;
 
 @Controller
 @RequestMapping("/sample/mvc")
 public class SpringMvcSampleController {
 
+	private LoginService loginService;
+	
 	@RequestMapping("/home")
 	public String byPaht() {
 		return "/sample/mvc/home";
@@ -53,9 +56,9 @@ public class SpringMvcSampleController {
 
 	@RequestMapping("/convert/primitive")
 	public String primitive(@RequestParam Integer value, Model model) {
-		
+
 		model.addAttribute("primitive", value);
-		
+
 		return "/sample/mvc/convert_primitive";
 	}
 
@@ -63,13 +66,33 @@ public class SpringMvcSampleController {
 	@RequestMapping("/convert/date/{value}")
 	public String date(@PathVariable @DateTimeFormat(iso = ISO.DATE) Date value, Model model) {
 		model.addAttribute("date", value);
-		
+
 		return "/sample/mvc/convert_date";
 	}
 
 	@RequestMapping("bean")
 	public String bean(ParamBean bean) {
 		return "Converted " + bean;
+	}
+
+	@RequestMapping(value = "/post", method = RequestMethod.GET)
+	public String form(Model model) {
+		Person person = new Person();
+		model.addAttribute("person", person);
+
+		return "/sample/mvc/form";
+	}
+
+	@RequestMapping(value = "/post", method = RequestMethod.POST)
+	public String form(Person person, Model model) {
+
+		return "/sample/mvc/form";
+	}
+
+	@RequestMapping(value = "/form/update", method = RequestMethod.POST)
+	public String formUpdate(Person person, Model model) {
+
+		return "/sample/mvc/form";
 	}
 
 }

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html;charset=Windows-31J"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <html>
 <body>
@@ -62,6 +63,16 @@
 		<div style="margin-left: 20px">
 			<p>
 				<a href="<c:url value="/sample/mvc/convert/date/2016-08-22" />">Date</a>
+			</p>
+		</div>
+		
+		
+		<p>
+			リクェストマッピング：<b>POST</b>
+		</p>
+		<div style="margin-left: 20px">
+			<p>
+				<a href="<c:url value="/sample/mvc/post" />">POST</a>
 			</p>
 		</div>
 
