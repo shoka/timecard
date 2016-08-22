@@ -2,6 +2,7 @@ package me.linknext.timecard;
 
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 import org.springframework.stereotype.Controller;
@@ -19,7 +20,8 @@ import me.linknext.timecard.service.LoginService;
 @RequestMapping("/sample/mvc")
 public class SpringMvcSampleController {
 
-	private LoginService loginService;
+	@Autowired
+	public LoginService loginService;
 	
 	@RequestMapping("/home")
 	public String byPaht() {
@@ -79,6 +81,9 @@ public class SpringMvcSampleController {
 	public String form(Model model) {
 		Person person = new Person();
 		model.addAttribute("person", person);
+		
+		
+		loginService.getUser("xxx");
 
 		return "/sample/mvc/form";
 	}
