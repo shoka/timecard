@@ -30,6 +30,7 @@ public class SpringMvcSampleController {
 
 	@RequestMapping(value = "/bypath_and_method", method = RequestMethod.GET)
 	public String byPathAndMethod() {
+		
 		return "/sample/mvc/bypath_and_method";
 	}
 

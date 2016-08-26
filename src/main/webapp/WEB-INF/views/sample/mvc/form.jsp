@@ -51,7 +51,7 @@
 			<p>フォームアクション指定あり：</p>
 			<p>
 				<spring:url value="/sample/mvc/form/update" var="formUrl" />
-				<form:form modelAttribute="person" action="${fn:escapeXml(formUrl)}">
+				<form:form modelAttribute="person" action="${formUrl}">
 					<table>
 						<tr>
 							<td>First Name:</td>

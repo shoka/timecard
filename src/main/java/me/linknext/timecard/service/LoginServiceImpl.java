@@ -15,6 +15,8 @@ public class LoginServiceImpl implements LoginService {
 
 	@Override
 	public User getUser(String UserId) {
+		
+	//	int count = userDao.count();
 
 		return null;
 	}
