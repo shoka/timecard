@@ -20,15 +20,15 @@ public class JspTagSampleController {
 		
 		List<SampleBean> list = new ArrayList<SampleBean>();	
 		SampleBean katsu = new SampleBean();
-		katsu.setName("Š‹");
+		katsu.setName("è‘›");
 		list.add(katsu);
 		
 		SampleBean komiya = new SampleBean();
-		komiya.setName("¬‹{");
+		komiya.setName("å°å®®");
 		list.add(komiya);
 		
 		SampleBean yoshimoto = new SampleBean();
-		yoshimoto.setName("‹g–{");
+		yoshimoto.setName("å‰æœ¬");
 		list.add(yoshimoto);
 		
 		model.addAttribute("userList", list);
