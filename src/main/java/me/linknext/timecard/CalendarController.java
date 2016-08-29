@@ -30,8 +30,7 @@ public class CalendarController {
 
 	@RequestMapping(value = "/init", method = RequestMethod.GET)
 	public String init(CalendarForm calendarForm, Model model) {
-		Person person = new Person();
-		model.addAttribute("person", person);
+
 
 		List<Calendar> calendarList = calendarService.getMonthCalendar("201608");
 
