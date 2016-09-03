@@ -3,7 +3,7 @@ package me.linknext.timecard.dao;
 import java.sql.Date;
 import java.util.List;
 
-import me.linknext.timecard.javabean.Calendar;
+import me.linknext.timecard.entity.Calendar;
 
 public interface CalendarDao {
 

@@ -1,6 +1,8 @@
-package me.linknext.timecard.dao;
+package me.linknext.timecard.dao.impl;
 
 import javax.sql.DataSource;
+
+import me.linknext.timecard.dao.UserDao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;

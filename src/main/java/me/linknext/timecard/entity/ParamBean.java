@@ -1,4 +1,4 @@
-package me.linknext.timecard.javabean;
+package me.linknext.timecard.entity;
 
 import java.util.Date;
 

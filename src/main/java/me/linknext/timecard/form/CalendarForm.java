@@ -1,8 +1,8 @@
-package me.linknext.timecard;
+package me.linknext.timecard.form;
 
 import java.util.List;
 
-import me.linknext.timecard.javabean.Calendar;
+import me.linknext.timecard.entity.Calendar;
 
 public class CalendarForm {
 

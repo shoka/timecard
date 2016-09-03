@@ -1,4 +1,4 @@
-package me.linknext.timecard;
+package me.linknext.timecard.controller;
 
 import java.util.Date;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import me.linknext.timecard.javabean.ParamBean;
-import me.linknext.timecard.javabean.Person;
+import me.linknext.timecard.entity.ParamBean;
+import me.linknext.timecard.entity.Person;
 import me.linknext.timecard.service.LoginService;
 
 @Controller

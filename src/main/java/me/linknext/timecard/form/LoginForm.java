@@ -1,6 +1,6 @@
-package me.linknext.timecard;
+package me.linknext.timecard.form;
 
-public class FormBean {
+public class LoginForm {
 	
 
 	private String userId;

@@ -2,7 +2,7 @@ package me.linknext.timecard.service;
 
 import java.util.List;
 
-import me.linknext.timecard.javabean.Calendar;
+import me.linknext.timecard.entity.Calendar;
 
 public interface CalendarService {
 	

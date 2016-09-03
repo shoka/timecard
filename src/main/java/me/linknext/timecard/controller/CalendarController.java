@@ -1,6 +1,10 @@
-package me.linknext.timecard;
+package me.linknext.timecard.controller;
 
 import java.util.List;
+
+import me.linknext.timecard.entity.Calendar;
+import me.linknext.timecard.form.CalendarForm;
+import me.linknext.timecard.service.CalendarService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,10 +13,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
-
-import me.linknext.timecard.javabean.Calendar;
-import me.linknext.timecard.javabean.Person;
-import me.linknext.timecard.service.CalendarService;
 
 @Controller
 @RequestMapping("/sample/calendar")

@@ -1,4 +1,4 @@
-package me.linknext.timecard.dao;
+package me.linknext.timecard.dao.impl;
 
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -7,12 +7,13 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import me.linknext.timecard.dao.CalendarDao;
+import me.linknext.timecard.entity.Calendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-
-import me.linknext.timecard.javabean.Calendar;
 
 @Repository
 public class CalendarDaoImpl implements CalendarDao {

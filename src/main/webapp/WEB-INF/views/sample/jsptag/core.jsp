@@ -2,7 +2,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="java.util.*" %>
-<%@ page import="me.linknext.timecard.javabean.SampleBean" %>
+<%@ page import="me.linknext.timecard.entity.SampleBean" %>
 
 <jsp:useBean id="date" class="java.util.Date"/>
 

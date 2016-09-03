@@ -1,4 +1,4 @@
-package me.linknext.timecard;
+package me.linknext.timecard.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import me.linknext.timecard.javabean.SampleBean;
+import me.linknext.timecard.entity.SampleBean;
 
 @Controller
 @RequestMapping("/sample/jsptag")
